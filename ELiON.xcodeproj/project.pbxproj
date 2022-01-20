@@ -8,10 +8,16 @@
 
 /* Begin PBXBuildFile section */
 		085A7D962796366F00C5801A /* ELKeyStatsInfoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 085A7D952796366F00C5801A /* ELKeyStatsInfoVC.swift */; };
-		085A7D9827963CB600C5801A /* ELCoinDetaiVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 085A7D9727963CB600C5801A /* ELCoinDetaiVC.swift */; };
-		085A7D9A2796638B00C5801A /* ELCoinPriceChangePercentage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 085A7D992796638B00C5801A /* ELCoinPriceChangePercentage.swift */; };
+		085A7D9827963CB600C5801A /* ELKeyStatsItemOneVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 085A7D9727963CB600C5801A /* ELKeyStatsItemOneVC.swift */; };
+		085A7D9A2796638B00C5801A /* ELKeyStatsItemTwoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 085A7D992796638B00C5801A /* ELKeyStatsItemTwoVC.swift */; };
 		085A7D9C279725A300C5801A /* Double+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 085A7D9B279725A300C5801A /* Double+Ext.swift */; };
-		08718B59273772FA00C9F02D /* Date+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08718B58273772FA00C9F02D /* Date+Ext.swift */; };
+		085A7D9E2798853700C5801A /* ELAditionalStats.swift in Sources */ = {isa = PBXBuildFile; fileRef = 085A7D9D2798853700C5801A /* ELAditionalStats.swift */; };
+		085A7DA02798A52E00C5801A /* ELDetailKeyStatsInfoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 085A7D9F2798A52E00C5801A /* ELDetailKeyStatsInfoVC.swift */; };
+		085A7DA22798AF6F00C5801A /* ELAditionalCoinInfoVCOne.swift in Sources */ = {isa = PBXBuildFile; fileRef = 085A7DA12798AF6F00C5801A /* ELAditionalCoinInfoVCOne.swift */; };
+		085A7DA42798AFBD00C5801A /* ELAditionalCoinInfoVCTwo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 085A7DA32798AFBD00C5801A /* ELAditionalCoinInfoVCTwo.swift */; };
+		085A7DA62798AFE900C5801A /* ELAditionalCoinInfoVCThree.swift in Sources */ = {isa = PBXBuildFile; fileRef = 085A7DA52798AFE900C5801A /* ELAditionalCoinInfoVCThree.swift */; };
+		085A7DA82798AFFD00C5801A /* ELAditionalCoinInfoVCFour.swift in Sources */ = {isa = PBXBuildFile; fileRef = 085A7DA72798AFFD00C5801A /* ELAditionalCoinInfoVCFour.swift */; };
+		088977012799D9E7004D8F9B /* Date+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 088977002799D9E7004D8F9B /* Date+Ext.swift */; };
 		08A7D4E12730FA2300A3A04E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08A7D4E02730FA2300A3A04E /* AppDelegate.swift */; };
 		08A7D4E32730FA2300A3A04E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08A7D4E22730FA2300A3A04E /* SceneDelegate.swift */; };
 		08A7D4EA2730FA2400A3A04E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 08A7D4E92730FA2400A3A04E /* Assets.xcassets */; };
@@ -23,7 +29,6 @@
 		08A7D4FD2730FD2F00A3A04E /* TrackVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08A7D4FC2730FD2F00A3A04E /* TrackVC.swift */; };
 		08A7D4FF2730FD4300A3A04E /* CardVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08A7D4FE2730FD4300A3A04E /* CardVC.swift */; };
 		08C5CA5D2789195A007311EF /* ELHeaderVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08C5CA5C2789195A007311EF /* ELHeaderVC.swift */; };
-		08C5CA5F27891991007311EF /* ELBodyVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08C5CA5E27891991007311EF /* ELBodyVC.swift */; };
 		08C5CA67278BB49E007311EF /* ELKeyStatsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08C5CA66278BB49E007311EF /* ELKeyStatsView.swift */; };
 		08C5E655273219010051B6BA /* NetorkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08C5E654273219010051B6BA /* NetorkManager.swift */; };
 		08C5E65727321BEA0051B6BA /* CoinMarketData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08C5E65627321BEA0051B6BA /* CoinMarketData.swift */; };
@@ -56,10 +61,16 @@
 
 /* Begin PBXFileReference section */
 		085A7D952796366F00C5801A /* ELKeyStatsInfoVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ELKeyStatsInfoVC.swift; sourceTree = "<group>"; };
-		085A7D9727963CB600C5801A /* ELCoinDetaiVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ELCoinDetaiVC.swift; sourceTree = "<group>"; };
-		085A7D992796638B00C5801A /* ELCoinPriceChangePercentage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ELCoinPriceChangePercentage.swift; sourceTree = "<group>"; };
+		085A7D9727963CB600C5801A /* ELKeyStatsItemOneVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ELKeyStatsItemOneVC.swift; sourceTree = "<group>"; };
+		085A7D992796638B00C5801A /* ELKeyStatsItemTwoVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ELKeyStatsItemTwoVC.swift; sourceTree = "<group>"; };
 		085A7D9B279725A300C5801A /* Double+Ext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Double+Ext.swift"; sourceTree = "<group>"; };
-		08718B58273772FA00C9F02D /* Date+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Ext.swift"; sourceTree = "<group>"; };
+		085A7D9D2798853700C5801A /* ELAditionalStats.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ELAditionalStats.swift; sourceTree = "<group>"; };
+		085A7D9F2798A52E00C5801A /* ELDetailKeyStatsInfoVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ELDetailKeyStatsInfoVC.swift; sourceTree = "<group>"; };
+		085A7DA12798AF6F00C5801A /* ELAditionalCoinInfoVCOne.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ELAditionalCoinInfoVCOne.swift; sourceTree = "<group>"; };
+		085A7DA32798AFBD00C5801A /* ELAditionalCoinInfoVCTwo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ELAditionalCoinInfoVCTwo.swift; sourceTree = "<group>"; };
+		085A7DA52798AFE900C5801A /* ELAditionalCoinInfoVCThree.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ELAditionalCoinInfoVCThree.swift; sourceTree = "<group>"; };
+		085A7DA72798AFFD00C5801A /* ELAditionalCoinInfoVCFour.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ELAditionalCoinInfoVCFour.swift; sourceTree = "<group>"; };
+		088977002799D9E7004D8F9B /* Date+Ext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Date+Ext.swift"; sourceTree = "<group>"; };
 		08A7D4DD2730FA2300A3A04E /* ELiON.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ELiON.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		08A7D4E02730FA2300A3A04E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		08A7D4E22730FA2300A3A04E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -73,7 +84,6 @@
 		08A7D4FC2730FD2F00A3A04E /* TrackVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackVC.swift; sourceTree = "<group>"; };
 		08A7D4FE2730FD4300A3A04E /* CardVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardVC.swift; sourceTree = "<group>"; };
 		08C5CA5C2789195A007311EF /* ELHeaderVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ELHeaderVC.swift; sourceTree = "<group>"; };
-		08C5CA5E27891991007311EF /* ELBodyVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ELBodyVC.swift; sourceTree = "<group>"; };
 		08C5CA66278BB49E007311EF /* ELKeyStatsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ELKeyStatsView.swift; sourceTree = "<group>"; };
 		08C5E654273219010051B6BA /* NetorkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetorkManager.swift; sourceTree = "<group>"; };
 		08C5E65627321BEA0051B6BA /* CoinMarketData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinMarketData.swift; sourceTree = "<group>"; };
@@ -160,11 +170,15 @@
 			isa = PBXGroup;
 			children = (
 				08C5CA5C2789195A007311EF /* ELHeaderVC.swift */,
-				08C5CA5E27891991007311EF /* ELBodyVC.swift */,
 				08C5E697273390C20051B6BA /* ELAlertVC.swift */,
 				085A7D952796366F00C5801A /* ELKeyStatsInfoVC.swift */,
-				085A7D9727963CB600C5801A /* ELCoinDetaiVC.swift */,
-				085A7D992796638B00C5801A /* ELCoinPriceChangePercentage.swift */,
+				085A7D9727963CB600C5801A /* ELKeyStatsItemOneVC.swift */,
+				085A7D992796638B00C5801A /* ELKeyStatsItemTwoVC.swift */,
+				085A7D9F2798A52E00C5801A /* ELDetailKeyStatsInfoVC.swift */,
+				085A7DA12798AF6F00C5801A /* ELAditionalCoinInfoVCOne.swift */,
+				085A7DA32798AFBD00C5801A /* ELAditionalCoinInfoVCTwo.swift */,
+				085A7DA52798AFE900C5801A /* ELAditionalCoinInfoVCThree.swift */,
+				085A7DA72798AFFD00C5801A /* ELAditionalCoinInfoVCFour.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -246,6 +260,7 @@
 			children = (
 				08C5E699273391220051B6BA /* ELAllertContainerView.swift */,
 				08C5CA66278BB49E007311EF /* ELKeyStatsView.swift */,
+				085A7D9D2798853700C5801A /* ELAditionalStats.swift */,
 				08C5CA59278918AA007311EF /* ViewControllers */,
 			);
 			path = Views;
@@ -264,8 +279,8 @@
 			children = (
 				08C5E69327337A750051B6BA /* UIView+Ext.swift */,
 				08C5E6952733905E0051B6BA /* UIViewController+EXT.swift */,
-				08718B58273772FA00C9F02D /* Date+Ext.swift */,
 				085A7D9B279725A300C5801A /* Double+Ext.swift */,
+				088977002799D9E7004D8F9B /* Date+Ext.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -345,28 +360,33 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				085A7D9E2798853700C5801A /* ELAditionalStats.swift in Sources */,
 				08C5E6962733905E0051B6BA /* UIViewController+EXT.swift in Sources */,
+				085A7DA22798AF6F00C5801A /* ELAditionalCoinInfoVCOne.swift in Sources */,
+				085A7DA82798AFFD00C5801A /* ELAditionalCoinInfoVCFour.swift in Sources */,
 				08C5E655273219010051B6BA /* NetorkManager.swift in Sources */,
+				085A7DA62798AFE900C5801A /* ELAditionalCoinInfoVCThree.swift in Sources */,
 				085A7D9C279725A300C5801A /* Double+Ext.swift in Sources */,
 				08C5E65A273221670051B6BA /* Constants.swift in Sources */,
 				08C5E6602732E9960051B6BA /* ELTitleLabel.swift in Sources */,
-				085A7D9827963CB600C5801A /* ELCoinDetaiVC.swift in Sources */,
+				085A7D9827963CB600C5801A /* ELKeyStatsItemOneVC.swift in Sources */,
 				08A7D4FF2730FD4300A3A04E /* CardVC.swift in Sources */,
 				08C5E65727321BEA0051B6BA /* CoinMarketData.swift in Sources */,
-				08C5CA5F27891991007311EF /* ELBodyVC.swift in Sources */,
 				08C5E6692733018A0051B6BA /* ELCoinImage.swift in Sources */,
-				08718B59273772FA00C9F02D /* Date+Ext.swift in Sources */,
 				08A7D4F72730FCCF00A3A04E /* HomeVC.swift in Sources */,
 				08C5E6662732FBEE0051B6BA /* ELButton.swift in Sources */,
+				085A7DA02798A52E00C5801A /* ELDetailKeyStatsInfoVC.swift in Sources */,
 				085A7D962796366F00C5801A /* ELKeyStatsInfoVC.swift in Sources */,
 				08A7D4F92730FCE900A3A04E /* AccountVC.swift in Sources */,
 				08A7D4F52730FC9700A3A04E /* CWTabBarController.swift in Sources */,
 				08C5CA67278BB49E007311EF /* ELKeyStatsView.swift in Sources */,
 				08C5E66F2733586C0051B6BA /* FeaturedCoinCell.swift in Sources */,
+				085A7DA42798AFBD00C5801A /* ELAditionalCoinInfoVCTwo.swift in Sources */,
 				08C5E698273390C20051B6BA /* ELAlertVC.swift in Sources */,
 				08C5E6642732ED530051B6BA /* ELSecondaryLabel.swift in Sources */,
 				08C5E69427337A750051B6BA /* UIView+Ext.swift in Sources */,
 				08A7D4E12730FA2300A3A04E /* AppDelegate.swift in Sources */,
+				088977012799D9E7004D8F9B /* Date+Ext.swift in Sources */,
 				08C5E65C273222BC0051B6BA /* ErrorMessages.swift in Sources */,
 				08A7D4E32730FA2300A3A04E /* SceneDelegate.swift in Sources */,
 				08C5CA5D2789195A007311EF /* ELHeaderVC.swift in Sources */,
@@ -374,7 +394,7 @@
 				08A7D4FD2730FD2F00A3A04E /* TrackVC.swift in Sources */,
 				08A7D4FB2730FD1300A3A04E /* MainVC.swift in Sources */,
 				08C5E69A273391220051B6BA /* ELAllertContainerView.swift in Sources */,
-				085A7D9A2796638B00C5801A /* ELCoinPriceChangePercentage.swift in Sources */,
+				085A7D9A2796638B00C5801A /* ELKeyStatsItemTwoVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

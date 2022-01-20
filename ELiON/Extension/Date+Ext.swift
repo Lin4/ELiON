@@ -1,18 +1,28 @@
 //
 //  Date+Ext.swift
-//  ELiON
+//  iCoin
 //
-//  Created by Lingeswaran Kandasamy on 11/6/21.
+//  Created by Lingeswaran Kandasamy on 12/16/21.
 //
 
 import Foundation
 
 extension Date {
     
-        func convertToMonthYearFormat() -> String {
-            let dateFormatter = DateFormatter()
-            dateFormatter.dateFormat = "MMM yyyy"
-            return dateFormatter.string(from: self)
-        }
-        
+    init(coinGeckoString: String) {
+        let formatter = DateFormatter()
+        formatter.dateFormat = "yyyy-MM-dd'T'HH:mm:ss.SSSZ"
+        let date = formatter.date(from: coinGeckoString) ?? Date()
+        self.init(timeInterval: 0, since: date)
     }
+    
+    private var shortFormatter: DateFormatter {
+        let formatter = DateFormatter()
+        formatter.dateStyle = .short
+        return formatter
+    }
+    
+    func asShortDateString() -> String {
+        return shortFormatter.string(from: self)
+    }
+}

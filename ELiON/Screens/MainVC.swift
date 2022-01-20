@@ -15,10 +15,14 @@ class MainVC: UIViewController {
     let contentView = UIView()
     
     
-    let headerView  = UIView()
-    let bodyViewOne = UIView()
-    let bodyViewTwo = UIView()
-    let FooterView  = UIView()
+    let headerView      = UIView()
+    let bodyViewOne     = UIView()
+    let bodyViewTwo     = UIView()
+    let bodyViewThree   = UIView()
+    let bodyViewFour    = UIView()
+    let bodyViewFive    = UIView()
+    let bodyViewSix     = UIView()
+   
     var itemViews: [UIView] = []
 
     override func viewDidLoad() {
@@ -41,7 +45,7 @@ class MainVC: UIViewController {
         
         NSLayoutConstraint.activate([
             contentView.widthAnchor.constraint(equalTo: scrollView.widthAnchor),
-            contentView.heightAnchor.constraint(equalToConstant: 800)
+            contentView.heightAnchor.constraint(equalToConstant: 1000)
         ])
     }
     
@@ -49,8 +53,13 @@ class MainVC: UIViewController {
     
     func initProduct(coinMarketData: CoinMarketData) {
         self.add(childVC: ELHeaderVC(coinData: coinMarketData), to: self.headerView)
-        self.add(childVC: ELCoinDetaiVC(coinData: coinMarketData), to: self.bodyViewOne)
-        self.add(childVC: ELCoinPriceChangePercentage(coinData: coinMarketData), to: self.bodyViewTwo)
+        self.add(childVC: ELKeyStatsItemOneVC(coinData: coinMarketData), to: self.bodyViewOne)
+        self.add(childVC: ELKeyStatsItemTwoVC(coinData: coinMarketData), to: self.bodyViewTwo)
+        
+        self.add(childVC: ELAditionalCoinInfoVCOne(coinData: coinMarketData), to: self.bodyViewThree)
+        self.add(childVC: ELAditionalCoinInfoVCTwo(coinData: coinMarketData), to: self.bodyViewFour)
+        self.add(childVC: ELAditionalCoinInfoVCThree(coinData: coinMarketData), to: self.bodyViewFive)
+        self.add(childVC: ELAditionalCoinInfoVCFour(coinData: coinMarketData), to: self.bodyViewSix)
     }
     
   
@@ -65,9 +74,10 @@ class MainVC: UIViewController {
     func layoutUI() {
         
         let padding: CGFloat = 20
-        let itemHeight: CGFloat = 100
+        let itemHeight: CGFloat = 130
+        let detailItemHeight: CGFloat = 80
         
-        itemViews = [headerView, bodyViewOne, bodyViewTwo, FooterView]
+        itemViews = [headerView, bodyViewOne, bodyViewTwo, bodyViewThree, bodyViewFour, bodyViewFive, bodyViewSix]
         
         for itemView in itemViews {
             contentView.addSubview(itemView)
@@ -86,15 +96,28 @@ class MainVC: UIViewController {
             headerView.heightAnchor.constraint(equalToConstant: itemHeight),
             
             
-            bodyViewOne.topAnchor.constraint(equalTo: headerView.bottomAnchor, constant: 60),
+            bodyViewOne.topAnchor.constraint(equalTo: headerView.bottomAnchor, constant: 40),
             bodyViewOne.heightAnchor.constraint(equalToConstant: itemHeight),
             
             
             bodyViewTwo.topAnchor.constraint(equalTo: bodyViewOne.bottomAnchor, constant: padding),
             bodyViewTwo.heightAnchor.constraint(equalToConstant: itemHeight),
             
-            FooterView.topAnchor.constraint(equalTo: bodyViewTwo.bottomAnchor, constant: padding),
-            FooterView.heightAnchor.constraint(equalToConstant: 50)
+            bodyViewThree.topAnchor.constraint(equalTo: bodyViewTwo.bottomAnchor, constant: 40),
+            bodyViewThree.heightAnchor.constraint(equalToConstant: detailItemHeight),
+            
+            
+            bodyViewFour.topAnchor.constraint(equalTo: bodyViewThree.bottomAnchor, constant: padding),
+            bodyViewFour.heightAnchor.constraint(equalToConstant: detailItemHeight),
+            
+            bodyViewFive.topAnchor.constraint(equalTo: bodyViewFour.bottomAnchor, constant: 40),
+            bodyViewFive.heightAnchor.constraint(equalToConstant: detailItemHeight),
+            
+            
+            bodyViewSix.topAnchor.constraint(equalTo: bodyViewFive.bottomAnchor, constant: padding),
+            bodyViewSix.heightAnchor.constraint(equalToConstant: detailItemHeight),
+            
+           
         
         ])
         

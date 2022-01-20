@@ -14,16 +14,11 @@ enum ItemType {
 class ELKeyStatsView: UIView {
 
     let symbolImageView = UIImageView()
-    
-    let titleLabel = ELSecondaryLabel(fontSize: 12, numberOfLines: 1)
-    
+    let titleLabel = ELSecondaryLabel(fontSize: 14, numberOfLines: 1)
     let currentPriceLabel = ELTitleLabel(textAlignment: .left, fontSize: 17)
-    
-    let priceChanePercentage24hLabel = ELTitleLabel(textAlignment: .left, fontSize: 10)
-    
+    let priceChanePercentage24hLabel = ELTitleLabel(textAlignment: .left, fontSize: 13)
     let marketCapLabel = ELTitleLabel(textAlignment: .left, fontSize: 17)
-    
-    let marketCapChangePercentageLabel = ELTitleLabel(textAlignment: .left, fontSize: 10)
+    let marketCapChangePercentageLabel = ELTitleLabel(textAlignment: .left, fontSize: 13)
     
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -41,10 +36,10 @@ class ELKeyStatsView: UIView {
         symbolImageView.contentMode = .scaleAspectFill
         symbolImageView.tintColor = .label
         let padding: CGFloat = 20
-        let spacingConst: CGFloat = 5
+        let spacingConst: CGFloat = 15
         
         NSLayoutConstraint.activate([
-        
+            
             titleLabel.topAnchor.constraint(equalTo: self.topAnchor),
             titleLabel.leadingAnchor.constraint(equalTo: self.leadingAnchor),
             titleLabel.heightAnchor.constraint(equalToConstant: padding),
@@ -62,12 +57,9 @@ class ELKeyStatsView: UIView {
             priceChanePercentage24hLabel.leadingAnchor.constraint(equalTo: symbolImageView.trailingAnchor, constant: spacingConst),
             priceChanePercentage24hLabel.heightAnchor.constraint(equalToConstant: padding)
             
-        
         ])
-        
-        
-        
     }
+    
     
     func set(itemType: ItemType, curPrice: Double, priceChange24H: Double, symbolImage: String, tintColors: UIColor) {
         

@@ -7,7 +7,7 @@
 
 import UIKit
 
-class ELCoinPriceChangePercentage: ELKeyStatsInfoVC {
+class ELKeyStatsItemTwoVC: ELKeyStatsInfoVC {
 
     var coinData: CoinMarketData!
     

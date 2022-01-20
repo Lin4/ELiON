@@ -7,7 +7,7 @@
 
 import UIKit
 
-class ELCoinDetaiVC: ELKeyStatsInfoVC {
+class ELKeyStatsItemOneVC: ELKeyStatsInfoVC {
 
     var coinData: CoinMarketData!
     
